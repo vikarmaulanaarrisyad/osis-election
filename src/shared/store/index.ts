@@ -6,6 +6,7 @@ import { configureStore } from '@reduxjs/toolkit';
 export const store = configureStore({
   reducer: {
     // auth: authReducer,
+    _dummy: () => ({}) // Dummy reducer to prevent "Store does not have a valid reducer" error
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
